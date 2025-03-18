@@ -31,7 +31,7 @@
 }
 
 .search-input:focus {
-  border-color: #4f46e5;
+  border-color: #ff6c7a;
   outline: none;
 }
 
@@ -97,6 +97,16 @@
   border-radius: 4px;
 }
 
+
+/* 검색 결과가 없을 때 표시되는 문구 스타일 */
+.no-result {
+  text-align: center;  /* 가운데 정렬 */
+  color: #777;  /* 글자 색상 */
+  font-size: 16px;  /* 글자 크기 */
+  margin-top: 10px;  /* 위쪽 여백 */
+  margin-bottom: 20px;  /* 아래쪽 여백 추가 */
+}
+
 /* 추천도 별점 스타일 */
 .contract-table td:last-child {
   font-size: 16px;
@@ -131,7 +141,7 @@
 .search-button {
   padding: 10px 16px;
   border: none;
-  background-color: #4f46e5;
+  background-color: #e8344e;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -141,5 +151,38 @@
 
 /* 🔍 버튼에 호버 효과 */
 .search-button:hover {
-  background-color: #4338ca;
+  background-color: #e8344e;
+}
+
+/* 🔹 동명이인 안내 문구 스타일 */
+.multi-result {
+  text-align: center;  /* 가운데 정렬 */
+  font-size: 18px;  /* 글자 크기 설정 */
+  font-weight: bold;  /* 글자를 굵게 표시 */
+  margin-top: 20px;  /* 위쪽 여백 추가 */
+  margin-bottom: 20px;  /* 아래쪽 여백 추가 */
+}
+
+/* 🔹 이전/다음 버튼을 포함하는 네비게이션 컨테이너 */
+.navigation-buttons {
+  display: flex;  /* 버튼들을 가로로 배치 */
+  justify-content: center;  /* 가운데 정렬 */
+  gap: 10px;  /* 버튼 사이 간격 조정 */
+  margin-top: 10px;  /* 위쪽 여백 추가 */
+  margin-bottom: 10px;  /* 아래쪽 여백 추가 */
+}
+
+/* 🔹 이전/다음 버튼 스타일 */
+.navigation-buttons button {
+  padding: 6px 12px;  /* 버튼 내부 여백 */
+  border: none;  /* 테두리 제거 */
+  background-color: #e8344e;
+  color: white;  /* 버튼 글자색 */
+  border-radius: 4px;  /* 버튼 모서리를 둥글게 */
+  cursor: pointer;  /* 마우스 오버 시 클릭 가능하게 설정 */
+}
+
+/* 🔹 버튼 호버(마우스를 올렸을 때) 효과 */
+.navigation-buttons button:hover {
+  background-color: #e8344e;  /* 버튼 배경색을 더 어두운 색으로 변경 */
 }
