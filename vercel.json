@@ -2,5 +2,11 @@
     "build": {
       "installCommand": "npm install",
       "buildCommand": "npm run build"
-    }
-  }git r
+    },
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
+    ],
+    "routes": [
+      { "src": "/.*", "dest": "/index.html" }
+    ]
+  }
